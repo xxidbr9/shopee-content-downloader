@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads</title>
+  <script src="popup.js" defer></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      background: #f8f8f8;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sidebar {
+      width: 60px;
+      background: #fff;
+      border-radius: 10px 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar button {
+      background: none;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-left: 3px solid transparent;
+    }
+
+    .sidebar button.active {
+      border-left: 3px solid #ff5e00;
+    }
+
+    .sidebar button img {
+      width: 24px;
+      height: 24px;
+      opacity: 0.7;
+    }
+
+    .sidebar button.active img {
+      opacity: 1;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 0 10px 10px 0;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+      width: 280px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 3px;
+      background: #ff5e00;
+      margin-bottom: 15px;
+    }
+
+    .download-btn {
+      width: 100%;
+      background: none;
+      border: 2px solid #ff5e00;
+      color: #ff5e00;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .download-btn span {
+      display: inline-block;
+    }
+
+    .download-btn svg {
+      width: 16px;
+      height: 16px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 class="title">Downloads</h2>
+    <div class="divider"></div>
+
+    <button class="download-btn" id="downloadBtn">
+      <span>Download All</span>
+      <!-- <span id="total">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ff5e00" viewBox="0 0 256 256"
+          class="loading-icon">
+          <path
+            d="M232,128a104,104,0,0,1-208,0c0-41,23.81-78.36,60.66-95.27a8,8,0,0,1,6.68,14.54C60.15,61.59,40,93.27,40,128a88,88,0,0,0,176,0c0-34.73-20.15-66.41-51.34-80.73a8,8,0,0,1,6.68-14.54C208.19,49.64,232,87,232,128Z">
+          </path>
+        </svg>
+      </span> -->
+    </button>
+  </div>
+
+</body>
+
+</html>
