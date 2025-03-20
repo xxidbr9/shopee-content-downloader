@@ -2,7 +2,7 @@
 <p align="center">
   <img src="./icons/icon128.png" alt="Shopee Content Downloader Icon">
 </p>
-![Shopee Content Downloader Icon](./icons/icon128.png)
+
 
 # How to Install the Chrome Web Extension
 
